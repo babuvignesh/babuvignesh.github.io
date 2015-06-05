@@ -5,7 +5,6 @@
 <script src="jquery.js"></script>
 <script src="angular.js"></script>
 <script src="bootstrap.js"></script>-->
-<link rel="stylesheet" href="index.css"></link>
 <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 <!-- Latest compiled and minified CSS -->
@@ -14,6 +13,9 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
 <!-- Latest compiled and minified JavaScript -->
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="index.css"></link>
 <script src="app.js"></script>
 </head>
 <body>
@@ -29,11 +31,11 @@
                   <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                  <li><a href="#" ng-click="feedSrc='http://rss.cnn.com/rss/cnn_topstories.rss';loadFeed($event);">CNN</a></li>
-                  <li><a href="#" ng-click="feedSrc='http://news.ycombinator.com/rss';loadFeed($event)">Hacker News</a></li>
-                  <li><a href="#" ng-click="feedSrc='http://feeds2.feedburner.com/Mashable';loadFeed($event)">Mashable</a></li>                  
-                  <li><a href="#" ng-click="feedSrc='http://feeds.huffingtonpost.com/huffingtonpost/raw_feed';loadFeed($event)">Huffington Post</a></li>
-                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/news/artsculture';loadFeed($event)">Reuters</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/reuters/healthNews';loadFeed($event);">Health News</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/reuters/entertainment';loadFeed($event)">Entertainment</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/reuters/companyNews';loadFeed($event)">Company News</a></li>                  
+                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/reuters/businessNews';loadFeed($event)">Business</a></li>
+                  <li><a href="#" ng-click="feedSrc='http://feeds.reuters.com/news/artsculture';loadFeed($event)">Arts</a></li>
                 </ul>
               </div>
                     <input type="text" class="span10" autocomplete="off" placeholder="Enter Feed URL" data-ng-model="feedSrc" />
