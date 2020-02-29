@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~normalize.css";
+
+@import "assets/styles/palette.scss";
+@import "assets/styles/fonts.scss";
+
+body {
+  background-color: $color1;
+  font-family: $fontFamily;
+}
